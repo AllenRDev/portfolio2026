@@ -26,7 +26,13 @@ const Hero = () => {
                       hover:scale-110
                       cursor-pointer
     ">
-        Download Resume
+  <a
+    href="/resume/Allen_Roberts_Resume_2026.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Resume
+  </a>
       </button>
 
       <button className="px-6 py-3 rounded-lg border 
