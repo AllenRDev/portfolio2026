@@ -9,8 +9,8 @@ export default function Projects() {
         "A full-stack community platform where food enthusiasts can discover, create, and share recipes. Features user authentication, interactive recipe posting, commenting system, and rating functionality.",
       techStack: ["Laravel", "React", "Inertia.js", "PostgreSQL", "Tailwind CSS"],
       icon: <FaUtensils className="text-blue-400 text-xl" />,
-      githubUrl: "https://github.com/AllenRDev/recipe-hub", // Replace with your repository link if available
-      liveUrl: "https://recipe-hub.on-forge.com",   // Replace with your live demo link if available
+      githubUrl: "https://github.com/AllenRDev/recipe-hub",
+      liveUrl: "https://recipe-hub.on-forge.com",
     },
   ];
 
@@ -32,7 +32,7 @@ export default function Projects() {
           Featured Projects
         </h2>
 
-        {/* Responsive Projects Grid */}
+        {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <div
@@ -55,7 +55,6 @@ export default function Projects() {
               "
             >
               <div>
-                {/* Card Header: Icon & Status Badge */}
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20">
                     {project.icon}
@@ -67,7 +66,6 @@ export default function Projects() {
                   )}
                 </div>
 
-                {/* Title & Description */}
                 <h3 className="text-2xl font-semibold mb-3 text-white">
                   {project.title}
                 </h3>
@@ -89,7 +87,6 @@ export default function Projects() {
                   ))}
                 </div>
 
-                {/* Action Links */}
                 <div className="flex items-center gap-4 pt-4 border-t border-gray-800/80 text-sm font-medium">
                   {project.githubUrl && (
                     <a
@@ -116,7 +113,7 @@ export default function Projects() {
             </div>
           ))}
 
-          {/* Placeholder Card for Future Work */}
+          {/* Placeholder Card for Future Projects */}
           <div
             className="
               flex
